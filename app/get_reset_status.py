@@ -1,13 +1,6 @@
-import os
+from mb_std import hrequest
 
-from dotenv import load_dotenv
-from mb_commons import hrequest
-
-load_dotenv()
-
-LOGIN = os.getenv("LOGIN")
-PASSWORD = os.getenv("PASSWORD")
-IP = os.getenv("IP")
+from app import IP, LOGIN, PASSWORD
 
 
 def main():
